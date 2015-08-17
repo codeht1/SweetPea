@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SweetPea</class>
+ <widget class="QMainWindow" name="SweetPea">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sweetpea</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/logo_ic.png</normaloff>icons/logo_ic.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <widget class="QPushButton" name="forward">
+      <property name="toolTip">
+       <string>Go Forward</string>
+      </property>
+      <property name="statusTip">
+       <string>Forward Button  Ctrl+W</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/fwd_ic.png</normaloff>icons/fwd_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+W</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="cancel">
+      <property name="toolTip">
+       <string>Cancel Page Loading</string>
+      </property>
+      <property name="statusTip">
+       <string>Cancel Button  Ctrl+E</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/cncl_ic.png</normaloff>icons/cncl_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+E</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="8">
+     <widget class="QWebView" name="webView">
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="reload">
+      <property name="toolTip">
+       <string>Reload This Page</string>
+      </property>
+      <property name="statusTip">
+       <string>Reloading Button  Ctrl+Q</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/rld_ic.png</normaloff>icons/rld_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+Q</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="addrsBar">
+      <property name="toolTip">
+       <string>Enter Web Address here</string>
+      </property>
+      <property name="statusTip">
+       <string>Address Bar</string>
+      </property>
+      <property name="whatsThis">
+       <string>Address Bar</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Web Address here and Hit enter</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="back">
+      <property name="toolTip">
+       <string>Go Backward</string>
+      </property>
+      <property name="statusTip">
+       <string>Backward Button    Backspace</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/back_ic.png</normaloff>icons/back_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Backspace</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QPushButton" name="startReading">
+      <property name="toolTip">
+       <string>Click for Start Reading the Page</string>
+      </property>
+      <property name="statusTip">
+       <string>Reader Button  Ctrl+R</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/read_ic.png</normaloff>icons/read_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+R</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QPushButton" name="mic">
+      <property name="toolTip">
+       <string>Give Voice Command</string>
+      </property>
+      <property name="statusTip">
+       <string>Audio Command Listener  Ctrl+M</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/mic_ic.png</normaloff>icons/mic_ic.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+M</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_Tab">
+   <property name="text">
+    <string>New Tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionClose_This_Tab">
+   <property name="text">
+    <string>Close This Tab</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close All</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>back</tabstop>
+  <tabstop>forward</tabstop>
+  <tabstop>cancel</tabstop>
+  <tabstop>reload</tabstop>
+  <tabstop>addrsBar</tabstop>
+  <tabstop>webView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
